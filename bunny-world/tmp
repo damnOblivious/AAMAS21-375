@@ -1,0 +1,249 @@
+(keras-new) user@user-Vostro-3669:~/ftw/FTW_19/pac_man/pacman_reinforcement_learning$ python -u pacman.py -p GmQAgent -g DirectionalGhost -x 3000 -n 3050  -l 10x10
+Using TensorFlow backend.
+/home/user/ftw/FTW_19/pac_man/pacman_reinforcement_learning/qlearningAgents.py:894: UserWarning: Update your `Dense` call to the Keras 2 API: `Dense(256, kernel_initializer="lecun_uniform", input_shape=(8,))`
+  self.model.add(Dense(256, init='lecun_uniform', input_shape=(self.input_size,)))
+/home/user/ftw/FTW_19/pac_man/pacman_reinforcement_learning/qlearningAgents.py:897: UserWarning: Update your `Dense` call to the Keras 2 API: `Dense(128, kernel_initializer="lecun_uniform")`
+  self.model.add(Dense(128, init='lecun_uniform'))
+/home/user/ftw/FTW_19/pac_man/pacman_reinforcement_learning/qlearningAgents.py:900: UserWarning: Update your `Dense` call to the Keras 2 API: `Dense(5, kernel_initializer="lecun_uniform")`
+  self.model.add(Dense(self.nb_actions, init='lecun_uniform'))
+----------
+### DqnModule ###
+Epsilon Decay = 0.9995, Discount Factor = 0.80
+Input Features = 8
+----------
+/home/user/ftw/FTW_19/pac_man/pacman_reinforcement_learning/qlearningAgents.py:894: UserWarning: Update your `Dense` call to the Keras 2 API: `Dense(256, kernel_initializer="lecun_uniform", input_shape=(10,))`
+  self.model.add(Dense(256, init='lecun_uniform', input_shape=(self.input_size,)))
+----------
+### DqnModule ###
+Epsilon Decay = 0.9995, Discount Factor = 0.80
+Input Features = 10
+----------
+----------
+############ GmQAgent ############
+Epsilon Decay = 0.999, Discount Factor = 0.80
+Feature Count: Ghost = 8, Food = 10
+Rewards for foodAgent: Time Penalty = -1.00, (Food Reward + Time Penalty) = 0.00,         (Food Reward + Time Penalty + LastReward) = 5.00
+Rewards for ghostAgent: Time Penalty = 0.01, (Death Penalty) = -2.00
+----------
+Beginning 3000 episodes of Training
+2020-02-15 02:49:33.418760: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Testing at 0 [-509.0, -509.0, -511.0, -510.0, -513.0, -517.0, -511.0, -509.0, -510.0, -514.0] Won 0
+[-511.3]
+Reinforcement Learning Status:
+	Completed 100 out of 3000 training episodes
+	Average Rewards over all training: -512.16
+	Average Rewards for last 100 episodes: -512.16
+	Episode took 7.27 seconds
+Testing at 100 [-634.0, -672.0, -580.0, -556.0, -536.0, -677.0, -530.0, -640.0, -592.0, -546.0] Won 0
+[-511.3, -596.3]
+Reinforcement Learning Status:
+	Completed 200 out of 3000 training episodes
+	Average Rewards over all training: -510.68
+	Average Rewards for last 100 episodes: -509.20
+	Episode took 50.70 seconds
+Testing at 200 [-574.0, -647.0, -513.0, -548.0, -1055.0, -712.0, -676.0, -514.0, -695.0, -533.0] Won 0
+[-511.3, -596.3, -646.7]
+Reinforcement Learning Status:
+	Completed 300 out of 3000 training episodes
+	Average Rewards over all training: -516.61
+	Average Rewards for last 100 episodes: -528.46
+	Episode took 106.88 seconds
+Testing at 300 [-756.0, -581.0, -1308.0, -517.0, -647.0, -494.0, -525.0, -928.0, -739.0, -711.0] Won 0
+[-511.3, -596.3, -646.7, -720.6]
+Reinforcement Learning Status:
+	Completed 400 out of 3000 training episodes
+	Average Rewards over all training: -513.98
+	Average Rewards for last 100 episodes: -506.08
+	Episode took 126.09 seconds
+Testing at 400 [-575.0, -546.0, -1146.0, -572.0, -1596.0, -603.0, -724.0, -790.0, -551.0, -866.0] Won 0
+[-511.3, -596.3, -646.7, -720.6, -796.9]
+Reinforcement Learning Status:
+	Completed 500 out of 3000 training episodes
+	Average Rewards over all training: -494.82
+	Average Rewards for last 100 episodes: -418.19
+	Episode took 119.89 seconds
+Testing at 500 [-525.0, -552.0, -837.0, -664.0, -606.0, -518.0, -640.0, -532.0, -1376.0, -720.0] Won 0
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0]
+Reinforcement Learning Status:
+	Completed 600 out of 3000 training episodes
+	Average Rewards over all training: -480.87
+	Average Rewards for last 100 episodes: -411.12
+	Episode took 112.30 seconds
+Testing at 600 [-815.0, -567.0, -603.0, -715.0, -1209.0, -604.0, -1409.0, -886.0, -573.0, -721.0] Won 0
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2]
+Reinforcement Learning Status:
+	Completed 700 out of 3000 training episodes
+	Average Rewards over all training: -474.75
+	Average Rewards for last 100 episodes: -438.07
+	Episode took 112.06 seconds
+Testing at 700 [-507.0, -507.0, -507.0, -507.0, -507.0, -530.0, -520.0, -507.0, -518.0, -507.0] Won 0
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7]
+Reinforcement Learning Status:
+	Completed 800 out of 3000 training episodes
+	Average Rewards over all training: -467.42
+	Average Rewards for last 100 episodes: -416.09
+	Episode took 84.59 seconds
+Testing at 800 [-920.0, -584.0, -707.0, -906.0, -831.0, -922.0, -620.0, -595.0, -526.0, -1295.0] Won 0
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6]
+Reinforcement Learning Status:
+	Completed 900 out of 3000 training episodes
+	Average Rewards over all training: -452.36
+	Average Rewards for last 100 episodes: -331.85
+	Episode took 98.29 seconds
+Testing at 900 [-1101.0, -626.0, -533.0, -861.0, -520.0, -1138.0, -989.0, -1214.0, -952.0, -586.0] Won 0
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0]
+Reinforcement Learning Status:
+	Completed 1000 out of 3000 training episodes
+	Average Rewards over all training: -427.01
+	Average Rewards for last 100 episodes: -198.92
+	Episode took 77.58 seconds
+Testing at 1000 [424.0, 344.0, 412.0, 388.0, -508.0, 388.0, 182.0, -781.0, -584.0, 400.0] Won 7
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5]
+Reinforcement Learning Status:
+	Completed 1100 out of 3000 training episodes
+	Average Rewards over all training: -394.99
+	Average Rewards for last 100 episodes: -74.72
+	Episode took 65.50 seconds
+Testing at 1100 [-511.0, 453.0, 431.0, -541.0, 405.0, -509.0, -509.0, 231.0, -512.0, 442.0] Won 5
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0]
+Reinforcement Learning Status:
+	Completed 1200 out of 3000 training episodes
+	Average Rewards over all training: -377.86
+	Average Rewards for last 100 episodes: -189.47
+	Episode took 48.21 seconds
+Testing at 1200 [390.0, -519.0, 414.0, -606.0, 440.0, 344.0, 429.0, 364.0, 398.0, -549.0] Won 7
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5]
+Reinforcement Learning Status:
+	Completed 1300 out of 3000 training episodes
+	Average Rewards over all training: -354.88
+	Average Rewards for last 100 episodes: -79.15
+	Episode took 45.46 seconds
+Testing at 1300 [-520.0, -511.0, -511.0, -507.0, -511.0, -507.0, -565.0, -511.0, -517.0, -523.0] Won 0
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3]
+Reinforcement Learning Status:
+	Completed 1400 out of 3000 training episodes
+	Average Rewards over all training: -325.45
+	Average Rewards for last 100 episodes: 57.11
+	Episode took 50.36 seconds
+Testing at 1400 [-663.0, -578.0, 382.0, -516.0, 464.0, 153.0, 462.0, -632.0, 333.0, -510.0] Won 5
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5]
+Reinforcement Learning Status:
+	Completed 1500 out of 3000 training episodes
+	Average Rewards over all training: -286.97
+	Average Rewards for last 100 episodes: 251.79
+	Episode took 51.36 seconds
+Testing at 1500 [-848.0, -574.0, -716.0, -600.0, -762.0, -579.0, -752.0, -986.0, -833.0, -539.0] Won 0
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9]
+Reinforcement Learning Status:
+	Completed 1600 out of 3000 training episodes
+	Average Rewards over all training: -251.94
+	Average Rewards for last 100 episodes: 273.59
+	Episode took 47.02 seconds
+Testing at 1600 [-543.0, -524.0, 462.0, 466.0, 450.0, 478.0, -542.0, 458.0, 498.0, 452.0] Won 7
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5]
+Reinforcement Learning Status:
+	Completed 1700 out of 3000 training episodes
+	Average Rewards over all training: -216.90
+	Average Rewards for last 100 episodes: 343.66
+	Episode took 35.16 seconds
+Testing at 1700 [522.0, 514.0, 518.0, 504.0, 510.0, 518.0, 520.0, -490.0, 512.0, 518.0] Won 9
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5, 414.6]
+Reinforcement Learning Status:
+	Completed 1800 out of 3000 training episodes
+	Average Rewards over all training: -189.49
+	Average Rewards for last 100 episodes: 276.60
+	Episode took 32.06 seconds
+Testing at 1800 [503.0, -491.0, 516.0, 518.0, 516.0, -499.0, 507.0, 512.0, 524.0, 522.0] Won 8
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5, 414.6, 312.8]
+Reinforcement Learning Status:
+	Completed 1900 out of 3000 training episodes
+	Average Rewards over all training: -159.94
+	Average Rewards for last 100 episodes: 371.78
+	Episode took 23.82 seconds
+Testing at 1900 [517.0, 500.0, 499.0, 502.0, 472.0, -500.0, 480.0, 504.0, 414.0, 478.0] Won 9
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5, 414.6, 312.8, 386.6]
+Reinforcement Learning Status:
+	Completed 2000 out of 3000 training episodes
+	Average Rewards over all training: -134.60
+	Average Rewards for last 100 episodes: 346.94
+	Episode took 20.98 seconds
+Testing at 2000 [506.0, 506.0, -500.0, 510.0, -494.0, -500.0, -501.0, 516.0, 508.0, 522.0] Won 6
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5, 414.6, 312.8, 386.6, 107.3]
+Reinforcement Learning Status:
+	Completed 2100 out of 3000 training episodes
+	Average Rewards over all training: -117.19
+	Average Rewards for last 100 episodes: 231.09
+	Episode took 20.01 seconds
+Testing at 2100 [-488.0, -488.0, -488.0, 524.0, 526.0, -484.0, 527.0, 526.0, -489.0, -489.0] Won 4
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5, 414.6, 312.8, 386.6, 107.3, -82.3]
+Reinforcement Learning Status:
+	Completed 2200 out of 3000 training episodes
+	Average Rewards over all training: -105.53
+	Average Rewards for last 100 episodes: 139.31
+	Episode took 16.18 seconds
+Testing at 2200 [-520.0, 508.0, -508.0, -512.0, -510.0, -506.0, 516.0, -506.0, -506.0, -506.0] Won 2
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5, 414.6, 312.8, 386.6, 107.3, -82.3, -305.0]
+Reinforcement Learning Status:
+	Completed 2300 out of 3000 training episodes
+	Average Rewards over all training: -87.70
+	Average Rewards for last 100 episodes: 304.46
+	Episode took 16.12 seconds
+Testing at 2300 [524.0, 522.0, 520.0, 520.0, -502.0, 522.0, 518.0, 522.0, 516.0, 522.0] Won 9
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5, 414.6, 312.8, 386.6, 107.3, -82.3, -305.0, 418.4]
+Reinforcement Learning Status:
+	Completed 2400 out of 3000 training episodes
+	Average Rewards over all training: -65.74
+	Average Rewards for last 100 episodes: 439.29
+	Episode took 16.59 seconds
+Testing at 2400 [527.0, 527.0, 526.0, 522.0, 526.0, 522.0, 527.0, 527.0, 526.0, 524.0] Won 10
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5, 414.6, 312.8, 386.6, 107.3, -82.3, -305.0, 418.4, 525.4]
+Reinforcement Learning Status:
+	Completed 2500 out of 3000 training episodes
+	Average Rewards over all training: -45.11
+	Average Rewards for last 100 episodes: 450.19
+	Episode took 17.07 seconds
+Testing at 2500 [-499.0, 527.0, 520.0, -488.0, 527.0, 527.0, 526.0, 524.0, 527.0, 526.0] Won 8
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5, 414.6, 312.8, 386.6, 107.3, -82.3, -305.0, 418.4, 525.4, 321.7]
+Reinforcement Learning Status:
+	Completed 2600 out of 3000 training episodes
+	Average Rewards over all training: -26.11
+	Average Rewards for last 100 episodes: 448.77
+	Episode took 17.19 seconds
+Testing at 2600 [522.0, 525.0, 522.0, 518.0, 526.0, -497.0, 516.0, 526.0, 524.0, 526.0] Won 9
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5, 414.6, 312.8, 386.6, 107.3, -82.3, -305.0, 418.4, 525.4, 321.7, 420.8]
+Reinforcement Learning Status:
+	Completed 2700 out of 3000 training episodes
+	Average Rewards over all training: -8.46
+	Average Rewards for last 100 episodes: 450.57
+	Episode took 15.38 seconds
+Testing at 2700 [514.0, 498.0, -494.0, 514.0, 502.0, -572.0, -496.0, 480.0, 484.0, 508.0] Won 7
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5, 414.6, 312.8, 386.6, 107.3, -82.3, -305.0, 418.4, 525.4, 321.7, 420.8, 193.8]
+Reinforcement Learning Status:
+	Completed 2800 out of 3000 training episodes
+	Average Rewards over all training: 7.89
+	Average Rewards for last 100 episodes: 449.13
+	Episode took 16.44 seconds
+Testing at 2800 [520.0, 525.0, 525.0, 522.0, 516.0, 526.0, 522.0, 524.0, 522.0, 524.0] Won 10
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5, 414.6, 312.8, 386.6, 107.3, -82.3, -305.0, 418.4, 525.4, 321.7, 420.8, 193.8, 522.6]
+Reinforcement Learning Status:
+	Completed 2900 out of 3000 training episodes
+	Average Rewards over all training: 23.46
+	Average Rewards for last 100 episodes: 459.64
+	Episode took 16.09 seconds
+Testing at 2900 [526.0, 522.0, 526.0, 526.0, 526.0, 520.0, 527.0, 524.0, 526.0, 526.0] Won 10
+[-511.3, -596.3, -646.7, -720.6, -796.9, -697.0, -810.2, -511.7, -790.6, -852.0, 66.5, -62.0, 110.5, -518.3, -110.5, -718.9, 165.5, 414.6, 312.8, 386.6, 107.3, -82.3, -305.0, 418.4, 525.4, 321.7, 420.8, 193.8, 522.6, 524.9]
+Reinforcement Learning Status:
+	Completed 3000 out of 3000 training episodes
+	Average Rewards over all training: 39.11
+	Average Rewards for last 100 episodes: 492.77
+	Episode took 14.52 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+Pacman emerges victorious! Score: 510
+Pacman emerges victorious! Score: 521
+Pacman emerges victorious! Score: 526
+Pacman emerges victorious! Score: 519
+Pacman emerges victorious! Score: 526
+Pacman emerges victorious! Score: 523
+Pacman emerges victorious! Score: 527
+Ending graphics raised an exception: 0
