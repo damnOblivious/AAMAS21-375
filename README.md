@@ -8,6 +8,8 @@ python -u pacman.py -p GmQ_Pre -x 2000 -n 2001  -l smallInitialGrid -g Direction
 
 ## To run racetrack:
 python racetrack.py
+To select specific agent change line #35 of racetrack/racetrack.py
 
 ## To run qbert:
 python3 examples.py
+To select specific agent change line #489 of qbert/examples.py

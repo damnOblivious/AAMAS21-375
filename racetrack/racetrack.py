@@ -22,6 +22,9 @@ layout_name = 'f1'
 layout = layout_parser.getLayout( layout_name )
 visuals = Visualizer(layout)
 env = Environment(layout)
+'''
+Choose you agent here.
+'''
 # agent = HierarchicalDDPGAgent(layout = layout, trialNum = TRIAL_NUM)
 # agent = DQNBaselineAgent(layout = layout)
 #agent = GmQAgent(layout = layout, trialNum = TRIAL_NUM)

@@ -476,6 +476,9 @@ if __name__ == '__main__':
     set_one_thread()
     select_device(0)
 
+    '''
+    Choose you agent here.
+    '''
     # dqn_cart_pole()
     # a2c_cart_pole()
     # categorical_dqn_cart_pole()
