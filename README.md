@@ -2,6 +2,8 @@
 Code link to the AAMAS_21 paper id 375 titled "Action Selection for Composable Modular Deep Reinforcement Learning".
 
 ## To run bunny world:
+python-2.7.12
+
 Install the requirements specified in [requirement.txt](https://github.com/damnOblivious/AAMAS21-375/blob/main/requirements.txt)
 
 python pacman.py -p [AgentName] -x [TrainingEpisodes] -n [TotalEpisodes]  -l [GridName] -g [GhostAgent's Policy] -q
@@ -9,6 +11,8 @@ Example:
 python -u pacman.py -p GmQ_Pre -x 2000 -n 2001  -l smallInitialGrid -g DirectionalGhost -q
 
 ## To run racetrack:
+python-2.7.12
+
 Install the requirements specified in [requirement.txt](https://github.com/damnOblivious/AAMAS21-375/blob/main/requirements.txt)
 
 python racetrack.py
