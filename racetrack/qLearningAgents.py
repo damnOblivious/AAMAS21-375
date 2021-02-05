@@ -36,7 +36,7 @@ class DQNBaselineAgent(Agent):
         self.epsilon = 1.0
         self.min_epsilon = 0.01
         self.decay = 0.9995
-        self.nb_features = 8
+        self.nb_features = 4
         self.nb_actions = 9
         self.discount = .95
         self.Agent = DqnModule(featureExtractor = FeatureExtractor(self.layout).getSimplestFeatures, nb_features = self.nb_features, discount = self.discount)
