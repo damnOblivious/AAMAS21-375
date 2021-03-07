@@ -21,7 +21,6 @@ class GmQAgent(BaseAgent):
         self.task = config.task_fn()
         self.network = config.network_fn(self.task.state_dim, self.task.action_dim)
         self.teacher = config.network_fn(self.task.state_dim, self.task.action_dim)
-        self.teacher = torch.load('subOptimalTeacher.net')
         self.target_network = config.network_fn(self.task.state_dim, self.task.action_dim)
         self.optimizer = config.optimizer_fn(self.network.parameters())
         self.criterion = nn.MSELoss()
